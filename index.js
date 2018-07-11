@@ -8,7 +8,7 @@ var server = http.createServer(function(request, response) {
     response.write("<h1 align=center><img src=https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg alt=StarWars class=StarWarsLogo width=500px onClick='window.location.reload()'/></h1>");
     response.write("<h1 align=center>" + starwars() + "</h1>");
     response.write("<input type=button value='Refresh Page' onClick='window.location.reload()'>");
-    response.write("<a href='javascript:location.reload(true)'>Refresh Page</a>");
+    response.write("<a href='javascript:location.reload(true)'><img src=https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg alt=StarWars class=StarWarsLogo width=500px'/></a>");
 
     
     response.end();
