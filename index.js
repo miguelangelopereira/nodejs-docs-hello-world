@@ -7,6 +7,7 @@ var server = http.createServer(function(request, response) {
     response.write("<head><link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'><style>body {font-family: 'Actor';font-size: 22px;color:yellow;background-color:black;}</style></head>")  
     response.write("<h1 align=center><img src=https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg alt=StarWars class=StarWarsLogo width=500px/></h1>");
     response.write("<h1 align=center>" + starwars() + "</h1>");
+    response.write("<input type=button value='Refresh Page' onClick=refresh>");
     response.end();
 
 });
